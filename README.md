@@ -33,3 +33,7 @@ ln (10000) *  .723824 = 6.6667
 3 Your tree is not balanced, so it does not correspond to the typical time complexity of a binary search tree.
 
 Add your answers to this markdown file.
+
+For this assignment, I was able to do it entirely on my own.
+
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
