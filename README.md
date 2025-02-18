@@ -3,7 +3,7 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
 
-  Speed is dependent on a lot of things besides the complexity of code, it is based upon hardware, other processes running, and size of information
+  Speed is dependent on a lot of things besides the complexity of code; it is based upon hardware, other processes running, and the size of information.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
@@ -12,7 +12,7 @@
 
   7 seconds
 
-The typical time complexity of a binary search tree function is log n so take log 1000 times it by your operating system and load you get out five seconds. Then you keep constant variables of the operating system and load increase the size of your tree to 10000, and you get out 6.6667 or rounding up 7 seconds
+The typical time complexity of a binary search tree function is log n, so take log 1000 times it by your hardware and load you get out five seconds. Then you keep constant variables of the operating system and load increase the size of your tree to 10000, and you get out 6.6667 or rounding up 7 seconds
 
 Here is how I did it mathematically
 
@@ -30,7 +30,7 @@ ln (10000) *  .723824 = 6.6667
   complexity suggests a different time.
 
 1 you are using different hardware than you used on the 1st test. 2; you have increased the load on your hardware compared to the first Test.
-3 Your tree is not balanced, so it does not correspond to the typical time complexity of a binary search tree.
+3 Your tree is not balanced, so it does not correspond to the typical time complexity of a binary search tree. In the worst case of an unbalanced tree, you turned it into a linked list with a search time complexity of n. Assuming you have the same hardware and load as last time, it would take you 7238.24 seconds to search through all of the elements. Thus, you most likely have a somewhat balanced tree, or the thing you were looking for is near the top of your linked list tree.
 
 Add your answers to this markdown file.
 
