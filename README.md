@@ -32,6 +32,13 @@ ln (10000) *  .723824 = 6.6667
 1 you are using different hardware than you used on the 1st test. 2; you have increased the load on your hardware compared to the first Test.
 3 Your tree is not balanced, so it does not correspond to the typical time complexity of a binary search tree. In the worst case of an unbalanced tree, you turned it into a linked list with a search time complexity of n. Assuming you have the same hardware and load as last time, it would take you 7238.24 seconds to search through all of the elements. Thus, you most likely have a somewhat balanced tree, or the thing you were looking for is near the top of your linked list tree.
 
+I got how long it would take with a linked list by
+
+n = 10000
+
+10000 * .723824  = 7238.24 seconds
+
+
 Add your answers to this markdown file.
 
 For this assignment, I was able to do it entirely on my own.
