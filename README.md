@@ -3,7 +3,7 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
 
-  Speed is dependent on a lot of things besides the complexity of code; it is based upon hardware, other processes running, and the size of information. The size of information is represented by n inside of asymptotic analysis.
+  Speed depends on many things besides the complexity of code; it is based on hardware, other processes running, and the size of the information. The size of information is represented by n inside of asymptotic analysis. The size of information Can really affect time. Even if you have the second smallest asymptotic analysis log n, It is still possible for an algorithm to take ridiculously long if it has a lot of information to process.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
