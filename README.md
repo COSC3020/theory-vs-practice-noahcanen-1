@@ -3,7 +3,26 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
 
-Speed depends on many things besides the asymptotic analysis; it is based on hardware,  Other processes running besides the program that you are testing the performance of, and the secondary processes inside the program that are ignored in asymptotic analysis Because for asymptotic complexity we only take the magnitude of the most significant process of the code and ignore secondary passes that are less of a lesser magnitude or how many times the central process is done.
+Speed depends on many things besides the asymptotic analysis; it is based on hardware,  Other processes running besides the program that you are testing the performance of, and the secondary processes inside the program that are ignored in asymptotic analysis. For instance
+
+T(n)= 3T(n/3) + 3
+
+      3(3T(n/9) + 3) + 3
+      
+      9T(n/9) + 6
+      
+      27T(n/27) + 9
+      
+      ...
+      
+      3^iT(n/3^i) + i*3
+    
+for i = lg n
+
+      nT(1) + lgn*3 = n + lgn*3 ∈ Θ(n)
+
+
+This is the asymptotic analysis for a program. However, inside the asymptotic bounds Θ(n), the asymptotic complexity is n. To get to that, we must ignore the secondary process of lgn*3. However, that process still factors into the program's runtime.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
