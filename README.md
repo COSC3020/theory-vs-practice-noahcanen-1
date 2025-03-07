@@ -3,10 +3,13 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
 
-Asymptotic analysis might be misleading for three reasons 
-One is the ignoring of constant factors that still impact actual performance but are not factored into the algorithm's growth rate
-Two the hardware that the algorithm is running on
-Three Other processes are running besides the algorithm that you are testing the performance of.
+Asymptotic analysis might be misleading concerning actual performance in practice for three reasons 
+
+One is the ignoring of constant factors that still impact actual performance but are not factored into the algorithm's growth rate.
+
+Two, the hardware that the algorithm is running on will impact actual performance.
+
+Three Other processes are running besides the algorithm that you are testing the actual performance of.
 
 
 
