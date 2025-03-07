@@ -3,7 +3,13 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
 
-Speed depends on many things besides the asymptotic analysis; it is based on hardware,  Other processes running besides the program that you are testing the performance of, and Asymptotic analysis only focuses on an algorithm's growth rate, disregarding constant factors that can significantly impact performance, especially for smaller input sizes; an algorithm with a lower order of complexity might still be slower in practice due to larger constants.
+Asymptotic analysis might be misleading for three reasons 
+One is the ignoring of constant factors that still impact actual performance but are not factored into the algorithm's growth rate
+Two the hardware that the algorithm is running on
+Three Other processes are running besides the algorithm that you are testing the performance of.
+
+
+
 
 
 
@@ -43,6 +49,6 @@ n = 10000
 
 Add your answers to this markdown file.
 
-I was able to do this assignment entirely on my own with help from Google AI because I just couldn't find an explanation you were happy with.
+For this assignment, I was able to do it entirely on my own.
 
 "I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
