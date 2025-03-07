@@ -7,22 +7,22 @@ Speed depends on many things besides the asymptotic analysis; it is based on har
 
 T(n)= 3T(n/3) + 3
 
-      3(3T(n/9) + 3) + 3
+3(3T(n/9) + 3) + 3
       
-      9T(n/9) + 6
+9T(n/9) + 6
       
-      27T(n/27) + 9
+27T(n/27) + 9
       
-      ...
+...
       
-      3^iT(n/3^i) + i*3
+3^iT(n/3^i) + i*3
     
 for i = lg n
 
-      nT(1) + lgn*3 = n + lgn*3 ∈ Θ(n)
+nT(1) + lgn*3 = n + lgn*3 ∈ Θ(n)
 
 
-This is the asymptotic analysis for a program. However, inside the asymptotic bounds Θ(n), the asymptotic complexity is n. To get to that, we must ignore the secondary process of lgn*3. However, that process still factors into the program's runtime.
+This is the asymptotic analysis for a program. However, inside the asymptotic bounds Θ(n), the asymptotic complexity is n. To get to that, we must ignore the secondary process of lgn*3. However, that secondary process still factors into the program's runtime.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
