@@ -3,26 +3,9 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
 
-Speed depends on many things besides the asymptotic analysis; it is based on hardware,  Other processes running besides the program that you are testing the performance of, and the secondary processes inside the program that are ignored in asymptotic analysis. For instance
-
-T(n)= 3T(n/3) + 3
-
-3(3T(n/9) + 3) + 3
-      
-9T(n/9) + 6
-      
-27T(n/27) + 9
-      
-...
-      
-3^iT(n/3^i) + i*3
-    
-for i = lg n
-
-nT(1) + lgn*3 = n + lgn*3 ∈ Θ(n)
+Speed depends on many things besides the asymptotic analysis; it is based on hardware,  Other processes running besides the program that you are testing the performance of, and Asymptotic analysis only focuses on an algorithm's growth rate, disregarding constant factors that can significantly impact performance, especially for smaller input sizes; an algorithm with a lower order of complexity might still be slower in practice due to larger constants.
 
 
-This is the asymptotic analysis for a program. However, inside the asymptotic bounds Θ(n), the asymptotic complexity is n. To get to that, we must ignore the secondary process of lgn*3. However, that secondary process still factors into the program's runtime.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
@@ -60,6 +43,6 @@ n = 10000
 
 Add your answers to this markdown file.
 
-For this assignment, I was able to do it entirely on my own.
+I was able to do this assignment entirely on my own with help from Google AI because I just couldn't find an explanation you were happy with.
 
 "I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
