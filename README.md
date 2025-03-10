@@ -9,7 +9,7 @@ One is the ignoring of constant factors that still impact actual performance but
 
 Two, the hardware that the algorithm is running on will impact actual performance.
 
-Three Other processes are running besides the algorithm that you are testing the actual performance of.
+Three, Asymptotic analysis is primarily focused on algorithms' behavior when dealing with large input sizes approaching Infinity. This performance may not accurately represent actual performance, as the input sizes are usually much smaller.
 
 
 
