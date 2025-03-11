@@ -9,7 +9,7 @@ One is the ignoring of constant factors that still impact actual performance but
 
 Two, the hardware that the algorithm is running on will impact actual performance.
 
-Three, Asymptotic analysis is primarily focused on algorithms' behavior when dealing with large input sizes approaching Infinity. This performance may not accurately represent actual performance, as the input sizes are usually much smaller.
+Third, asymptotic analysis primarily focuses on algorithms' behavior when dealing with large input sizes approaching infinity.  The algorithm's actual performance will look more and more like the Asymptotic analysis the larger the input size is. However, this performance may not accurately represent actual performance, as the input sizes are usually much smaller. For instance, take two algorithms: one has the asymptotic analysis of Θ ($n^n$) while the other has the asymptotic analysis of Θ ($n$). You would expect algorithm 1 to perform slower than algorithm 2 in everyday use. Algorithm 1 performs better than algorithm 2. This is because these two algorithms are made to handle pacifically large input sizes, while algorithm one was made to handle smaller input sizes.
 
 
 
