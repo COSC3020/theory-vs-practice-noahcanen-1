@@ -3,13 +3,13 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
 
-Asymptotic analysis might be misleading concerning actual performance in practice for three reasons 
+Asymptotic analysis might be misleading concerning actual performance in practice for three reasons. 
 
 One is the ignoring of constant factors that still impact actual performance but are not factored into the algorithm's growth rate.
 
 Two, the hardware that the algorithm is running on will impact actual performance.
 
-Third, asymptotic analysis primarily focuses on algorithms' behavior when dealing with large input sizes approaching infinity.  The algorithm's actual performance will look more and more like the Asymptotic analysis the larger the input size is. However, this performance may not accurately represent actual performance, as the input sizes are usually much smaller. For instance, take two algorithms: one has the asymptotic analysis of Θ ($n^n$) while the other has the asymptotic analysis of Θ ($n$). You would expect algorithm 1 to perform slower than algorithm 2 in everyday use. Algorithm 1 performs better than algorithm 2. This is because these two algorithms are made to handle pacifically large input sizes, while algorithm one was made to handle smaller input sizes.
+Third, there are only two pieces of information that asymptotic analysis takes into account: size of information (n) and the largest the order of magnitude of the algorithm. This means that a lesser order of magnitude parts of the algorithm is ignored even though they still impact overall performance.  For example, our asymptotic equation is n+logn5. Still, the asymptotic analysis is Θ(n), which excludes the logn5 because it is a lower order part of the algorithm but still impacts overall performance.
 
 
 
